@@ -1,0 +1,246 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    background-color: #189F66;
+}
+
+.logo{
+    width: 300px;
+    margin: auto;
+}
+
+#logo{
+    width: 300px;
+}
+
+.survey{
+    margin: auto;
+    max-width: 70%;
+    text-align: center;
+}
+
+.list{
+    display:block;
+    text-align: left;
+    width: 70%;
+    margin: auto;
+}
+
+#mobilesubmit{
+    display: none;
+        }
+        
+#about{
+    max-width:86%;
+}
+
+.about{
+    text-align: left;
+}
+
+.question{
+    margin: auto;
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+    max-width: 100%;
+    height: auto;
+    background-color: #189F66;
+    text-align: center;
+    padding: 20px 5px 20px 5px;
+    
+}
+
+#ranking{
+   text:align: left !important;
+}
+
+#ranking select{
+    float:right;
+}
+
+#ranking label{
+  text:align: left !important;
+  margin-top: 10px;
+}
+
+.option{
+    margin: auto;
+    width: 70%;
+    padding-top: 10px;
+    text-align: left;
+}
+
+input[type=radio] {
+    float: left;
+    margin-right: 10px;
+}
+
+.submit{
+    width: 35%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.submitbtn{
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	border-radius: 0px;
+	-webkit-appearance: none;
+	cursor:pointer;
+	background-color: #189F66;
+	color:white;
+	font-size:20px;
+	padding-top:20px;
+	padding-bottom:20px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+}
+
+.submitbtn:hover{
+    background-color: white;
+    color: #189F66;
+    border: #189F66 solid 4px;
+    -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+    
+}
+br{
+   
+    line-height: 25px;
+}
+
+.error{
+    color: red;
+}
+
+footer{
+    height: 150px;
+    width: 100%;
+    margin-top: 45px;
+    text-align: center;
+    
+}
+
+#footerimgs{
+   
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+footer img{
+    height: 100px;
+    
+}
+/*
+MEDIA QUERIES
+*/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+    
+    h2{
+            font-size: 20px;
+        }
+    
+    .submit{
+        width: 45%;
+    }
+    
+    .logo{
+        width: 200px;
+    }
+    
+    #logo{
+        width: 200px;
+    }
+    
+    .survey{
+        max-width: 80%;
+    }
+    
+    .list{
+            width: 100%;
+        }
+        
+    .option{
+            font-size: 16px;
+            width: 60%;
+            padding-top: 15px;
+    }
+}
+           
+
+/* for 700px or less */
+    @media screen and (max-width: 600px) {
+        
+        h2{
+            font-size: 20px;
+        }
+        
+        .survey{
+            width: 100%;
+        }
+        
+        .list{
+            width: 100%;
+        }
+        
+        .option{
+            font-size: 16px;
+            width: 86%;
+            padding-top: 15px;
+        }
+        
+        .submit{
+        width: 60%;
+    }
+        
+        #footerimgs{
+            display: block;
+        }
+        
+        footer img{
+            margin-left: 0;
+        }
+    }
+
+/* for 480px or less */
+    @media screen and (max-width: 480px) {
+        
+        #mobilesubmit{
+            display: block;
+        }
+        
+        h2{
+            font-size: 20px;
+        }
+        
+        .survey{
+            width: 100%;
+        }
+        
+        .option{
+            width: 96%;
+            
+        }
+        
+        .submit{
+        width: 96%;
+    }
+        
+        #footerimgs{
+            display: block;
+        }
+        
+        footer img{
+            margin-left: 0;
+        }
+      
+    }

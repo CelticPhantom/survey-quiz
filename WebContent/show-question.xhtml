@@ -1,0 +1,38 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+  <title>Survey Question</title>
+  <h:outputStylesheet library="css" name="survey-quiz.css" />
+</h:head>
+
+<h:body>
+       <header>
+
+            <div class="logo">
+               <h:graphicImage library="img" name="NS lettermark.svg" alt="Nutrisaurus Logo" id="logo"/>
+           </div>
+        </header>
+
+	<div class="survey">
+	<!-- <p>Question #{questions.questionNum} (#{questions.current}) of #{questions.questionCount}</p> -->
+	<p>Question #{questionAnswer.questionNum} of #{questions.questionCount}</p>
+	<h:form>
+		<p class="question"><strong>
+			<h:outputText value="#{questionAnswer.questionNum}" />. 
+			<h:outputText value="#{questionAnswer.questionText}" />
+		</strong>
+		</p>
+		
+		<h:selectOneRadio value="#{questionAnswer.answer}"  layout="pageDirection">
+			<f:selectItems value="#{questionAnswer.answerOptions}" class="option" />
+		</h:selectOneRadio>
+		<h:commandButton value="Next Question" action="#{questions.nextQuestion}"
+			class="submitbtn submit" />
+	</h:form>
+	</div>
+</h:body>
+
+</html>
